@@ -1,0 +1,56 @@
+{
+  "info": {
+    "_postman_id": "a883ba6d-5aa3-44cf-8f11-29a5c3640f77",
+    "name": "bom-service",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "10043564"
+  },
+  "item": [
+    {
+      "name": "Crear Producto",
+      "request": {
+        "method": "POST",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "Agregar Materiales",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"material\": \"Cuero\",\r\n  \"quantity\": 2\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/products/1/materials",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "products",
+            "1",
+            "materials"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Calcular producción",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    }
+  ]
+}
